@@ -1,26 +1,3 @@
-![Ai Police](https://user-images.githubusercontent.com/99494967/228243585-182d1147-4ffd-4738-a123-7eda83e7b06b.png)
-
-
-
-This resource is fairly basic. Essentially, you can add an exportr to your scripts, that will add a specified amount of 'Wanted Stars' like in normal GTA. Police etc. will then pursue the player till he loses them.
-
-If you have any improvement ideas/issues etc. Please create a PR Request/Issue on this Repo.
-
-# Export
-
-```lua
-exports['AiPolice']:ApplyWantedLevel(--1 to 5)
-```
-
-You can also use the event-handler in the resource, example in the Config. (Although this is not recommend and might lead to not safe for net errors)
-
-# Credits
-
-This script was created in large-part by phade#9756. Bag yourself some, quite frankly, amazing resources, by checking out his store @ https://phades-development.tebex.io/ or his discord @ https://discord.gg/Dh8E37Xt3t
-  
-A couple touch-ups were made by me @ https://discord.gg/samueldev / https://fivem.samueldev.shop
-
-
 # Installation
 
 1.) First you want to go to qb-smallresources/config.lua and find the following:
