@@ -1,0 +1,106 @@
+switcher = {
+    qbcore = false,
+    esx = true
+}
+
+Config = {}
+
+Config.MaxWantedLevel = 5
+
+Config.RemoveVehicleGenerators = true --Remove PD vehicle generators when pd go online
+
+Config.EnablePursitOnlyVehicleOccurence = true
+Config.PursiutCarModulo = 3
+-- Some cop cars will ONLY chase and ram the suspect(policemen will not exit the vehicle and shoot), 
+-- this value modifies the occurrence by way of vehicleId modulo. 
+-- Putting it plainly, if:
+-- PursiutCarModulo = 1: 100%(1/1) of cop cars will ONLY do pursuit
+-- PursiutCarModulo = 2: 50%(1/2) of cop cars will ONLY do pursuit
+-- PursiutCarModulo = 3: 33%(1/3) of cop cars will ONLY do pursuit
+-- PursiutCarModulo = 100: 1%(1/100) of cop cars will ONLY do pursuit
+
+Config.PoliceJobs = {
+    [1] = {
+        job = 'police',
+        dutyCheck = true,
+    },
+}
+
+
+Config.PoliceEventHandlers = {
+   -- [1] = {
+    --    event = 'electronickit:UseElectronickit',
+   --     wantedLevel = 4,
+   -- },
+   -- [2] = {
+   --     event = 'lockpicks:UseLockpick',
+    --    wantedLevel = 2,
+   -- },
+}
+
+Config.DispatchTypes = {
+    [0] = {
+        dispatchType = 'DT_Invalid',
+        enable = true
+    },
+    [1] = {
+        dispatchType = 'DT_PoliceAutomobile',
+        enable = true
+    },
+    [2] = {
+        dispatchType = 'DT_PoliceHelicopter',
+        enable = true
+    },
+    [3] = {
+        dispatchType = 'DT_FireDepartment',
+        enable = true
+    },
+    [4] = {
+        dispatchType = 'DT_SwatAutomobile',
+        enable = true
+    },
+    [5] = {
+        dispatchType = 'DT_AmbulanceDepartment',
+        enable = true
+    },
+    [6] = {
+        dispatchType = 'DT_PoliceRiders',
+        enable = true
+    },
+    [7] = {
+        dispatchType = 'DT_PoliceVehicleRequest',
+        enable = true
+    },
+    [8] = {
+        dispatchType = 'DT_PoliceRoadBlock',
+        enable = true
+    },
+    [9] = {
+        dispatchType = 'DT_PoliceAutomobileWaitPulledOver',
+        enable = true
+    },
+    [10] = {
+        dispatchType = 'DT_PoliceAutomobileWaitCruising',
+        enable = true
+    },
+    [11] = {
+        dispatchType = 'DT_Gangs',
+        enable = true
+    },
+    [12] = {
+        dispatchType = 'DT_SwatHelicopter',
+        enable = true
+    },
+    [13] = {
+        dispatchType = 'DT_PoliceBoat',
+        enable = true
+    },
+    [14] = {
+        dispatchType = 'DT_ArmyVehicle',
+        enable = true
+    },
+    [15] = {
+        dispatchType = 'DT_BikerBackup',
+        enable = true
+    }
+}
